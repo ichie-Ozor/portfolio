@@ -20,6 +20,11 @@ $(document).ready(function(){
       $('html').animate({scrollTop: 0});
     })
 
+    // Download script
+    $("#btndownload").click(function(e) {
+      e.preventDefault();
+      window.location.href = "CV.docx"
+    })
 
     // typing animation script
     var typed = new Typed(".typing", {
